@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vihas Vattikuti — Portfolio</title>
+
+  <!-- Google Font Import -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --bg: #0d0d1a;
@@ -30,6 +34,7 @@
       border-radius: 18px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.5);
       padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
     header {
       text-align: center;
@@ -68,6 +73,11 @@
       padding: 10px;
       border-radius: 8px;
       margin-bottom: 8px;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+    ul li:hover {
+      background: rgba(124, 58, 237, 0.15);
+      transform: translateX(4px);
     }
     a {
       color: var(--accent2);
@@ -80,6 +90,12 @@
       margin-top: 20px;
       color: var(--muted);
       font-size: 0.9rem;
+    }
+    /* Mobile-friendly padding */
+    @media (max-width: 500px) {
+      .container {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -98,30 +114,30 @@
     <section>
       <h2>Hobbies</h2>
       <ul>
-        <li>Photography</li>
-        <li>Gaming</li>
-        <li>Coding</li>
-        <li>Sports</li>
+        <li><strong>Photography</strong></li>
+        <li><strong>Gaming</strong></li>
+        <li><strong>Coding</strong></li>
+        <li><strong>Sports</strong></li>
       </ul>
     </section>
 
     <section>
       <h2>Languages</h2>
       <ul>
-        <li>C</li>
-        <li>Java</li>
-        <li>Python</li>
-        <li>HTML</li>
+        <li><strong>C</strong></li>
+        <li><strong>Java</strong></li>
+        <li><strong>Python</strong></li>
+        <li><strong>HTML</strong></li>
       </ul>
     </section>
 
     <section>
       <h2>Soft Skills</h2>
       <ul>
-        <li>Listener</li>
-        <li>Logical Thinking</li>
-        <li>Communication</li>
-        <li>Adaptability</li>
+        <li><strong>Listener</strong></li>
+        <li><strong>Logical Thinking</strong></li>
+        <li><strong>Communication</strong></li>
+        <li><strong>Adaptability</strong></li>
       </ul>
     </section>
 
@@ -141,7 +157,7 @@
     <section>
       <h2>Contact</h2>
       <p>Email: <a href="mailto:vihasvattikuti@gmail.com">vihasvattikuti@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/vihas-vattikuti-747984325/" target="_blank">linkedin.com/in/vihas-vattikuti-747984325/</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/vihas-vattikuti-747984325/" target="_blank" rel="noopener noreferrer">linkedin.com/in/vihas-vattikuti-747984325/</a></p>
     </section>
 
     <footer>
