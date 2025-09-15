@@ -5,24 +5,82 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Vihas Vattikuti — Portfolio</title>
   <style>
-    :root{--accent:#2563eb;--bg:#0f172a;--card:#0b1220;--muted:#94a3b8;color-scheme:dark}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
-    body{background:linear-gradient(180deg,#071028 0%, #021224 100%);color:#e6eef8;line-height:1.5;padding:24px}
-    .container{max-width:780px;margin:0 auto}
-    header{text-align:center;margin-bottom:28px}
-    h1{margin:0;font-size:1.8rem}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-
-    section{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.6);margin-bottom:20px}
-    section h2{margin-top:0;font-size:1.3rem}
-
-    ul{list-style:none;padding:0;margin:0}
-    ul li{background:rgba(255,255,255,0.02);padding:8px;border-radius:8px;margin-bottom:6px}
-
-    footer{text-align:center;color:var(--muted);font-size:0.9rem;margin-top:20px}
-    a{color:var(--accent);text-decoration:none}
-    a:hover{text-decoration:underline}
+    :root {
+      --bg: #0d0d1a;
+      --card: #181828;
+      --accent: #7c3aed;
+      --accent2: #06b6d4;
+      --text: #f0f3fa;
+      --muted: #9ca3af;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Poppins", system-ui, sans-serif;
+      background: linear-gradient(135deg, var(--accent) 0%, var(--accent2) 100%);
+      min-height: 100vh;
+      padding: 40px 20px;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 850px;
+      width: 100%;
+      background: var(--bg);
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+      padding: 40px;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 2.2rem;
+      background: linear-gradient(to right, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 8px;
+    }
+    p.lead {
+      font-size: 1rem;
+      color: var(--muted);
+    }
+    section {
+      background: var(--card);
+      padding: 20px;
+      border-radius: 14px;
+      margin-bottom: 20px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    section:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    }
+    section h2 {
+      margin-bottom: 12px;
+      font-size: 1.3rem;
+      color: var(--accent2);
+    }
+    ul { list-style: none; }
+    ul li {
+      background: rgba(255,255,255,0.05);
+      padding: 10px;
+      border-radius: 8px;
+      margin-bottom: 8px;
+    }
+    a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
@@ -34,7 +92,7 @@
 
     <section>
       <h2>About Me</h2>
-      <p>Hello! my name is Vihas Vattikuti, I am second year CSE student studying in KLH-Bachupally. I am curious man and always looking to learn new things and meet new people, I am an aspiring and hardworking student looking to build my career brick by brick into a solid wall. This is my personal portfolio , Thanks for viewing it!</p>
+      <p>Hello! My name is <strong>Vihas Vattikuti</strong>. I am a second-year CSE student at KLH-Bachupally. Curious and driven, I enjoy learning new things and meeting new people. I’m an aspiring, hardworking student building my career step by step into a solid future. Thanks for visiting my portfolio!</p>
     </section>
 
     <section>
@@ -71,13 +129,13 @@
       <h2>Projects</h2>
       <ul>
         <li><strong>Hangman Game (C Language):</strong> A word-guessing game built using C with string handling and loops.</li>
-        <li><strong>Chess Game Work in Progress (C Language):</strong> The chess game project is a work in progress project that I am developing step by step to make sure it adheres to all the rules of the game.</li>
+        <li><strong>Chess Game (Work in Progress):</strong> A step-by-step implementation of a chess game in C following official rules.</li>
       </ul>
     </section>
 
     <section>
-      <h2>My Aspiration (5 Years from Now)</h2>
-      <p>In the next five years, I aspire to grow into a role in a big company with a good pay and a good role to make sure I can take care of my family and lead a successful life. I plan on attending plenty of hackathons and seminars to learn from the best of the best and industry leading experts to develop myself and level up into a better version of myself everyday!</p>
+      <h2>My Aspiration</h2>
+      <p>Five years from now, I aspire to grow into a role in a big company with good pay and responsibility, ensuring I can support my family and lead a successful life. I plan to attend hackathons, seminars, and learn from industry experts to level up every day!</p>
     </section>
 
     <section>
@@ -87,7 +145,7 @@
     </section>
 
     <footer>
-      <small>Thank You!</small>
+      <small>Thank You for Visiting ✨</small>
     </footer>
   </div>
 </body>
